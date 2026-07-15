@@ -1,48 +1,78 @@
 # 🌊 Rising Waters
-## AI-Based Flood Prediction & Monitoring System
 
-Rising Waters is a Machine Learning-based web application that predicts flood risk using environmental factors such as rainfall, river level, humidity, and temperature. The project combines a React frontend with a Flask backend and a Random Forest machine learning model to provide fast and accurate flood risk predictions.
+> **AI-Based Flood Prediction & Monitoring System using Machine Learning**
 
----
-
-## 📌 Project Overview
-
-Floods are among the most destructive natural disasters. This project aims to provide an intelligent system that predicts flood risk based on weather and environmental conditions, helping users take preventive actions.
-
-The application allows users to:
-- Enter environmental parameters.
-- Predict flood risk using a trained Random Forest model.
-- View prediction confidence.
-- Receive safety recommendations based on the predicted flood risk.
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react)
+![Flask](https://img.shields.io/badge/Backend-Flask-000000?logo=flask)
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![Scikit-learn](https://img.shields.io/badge/Machine%20Learning-Random%20Forest-orange)
+![Bootstrap](https://img.shields.io/badge/UI-Bootstrap-7952B3?logo=bootstrap)
+![License](https://img.shields.io/badge/License-Educational-green)
 
 ---
 
-## 🚀 Features
+## 📖 Project Overview
 
-- 🌧 Flood prediction using Machine Learning
-- 🤖 Random Forest Classifier
-- 📊 Confidence score for predictions
-- 🚨 Safety recommendations
-- 💻 Responsive React interface
-- ⚡ Flask REST API
-- 📂 Kaggle dataset integration
+**Rising Waters** is an AI-powered Flood Prediction and Monitoring System developed using **React, Flask, and Machine Learning**.
+
+The application predicts flood risk using environmental parameters such as:
+
+- 🌧 Rainfall
+- 🌊 River Level
+- 💧 Humidity
+- 🌡 Temperature
+
+The prediction is generated using a **Random Forest Classifier** trained on a flood prediction dataset.
 
 ---
 
-## 🛠 Tech Stack
+# 🎯 Objectives
 
-### Frontend
+- Predict flood risk accurately using Machine Learning.
+- Provide early warning for flood-prone conditions.
+- Display prediction confidence.
+- Suggest safety recommendations.
+- Build an easy-to-use web application.
+
+---
+
+# ✨ Features
+
+✅ Flood Risk Prediction
+
+✅ Machine Learning Integration
+
+✅ Random Forest Classifier
+
+✅ Confidence Score
+
+✅ Safety Advice
+
+✅ Responsive User Interface
+
+✅ Flask REST API
+
+✅ Kaggle Dataset Integration
+
+---
+
+# 🛠 Technology Stack
+
+## Frontend
+
 - React.js
 - Vite
 - Bootstrap 5
 - Axios
 
-### Backend
+## Backend
+
 - Flask
 - Flask-CORS
 - Joblib
 
-### Machine Learning
+## Machine Learning
+
 - Python
 - Pandas
 - NumPy
@@ -51,26 +81,28 @@ The application allows users to:
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```
-Rising-Waters/
+Rising-Waters
 │
-├── frontend/
-│   ├── backend/
+├── frontend
+│   │
+│   ├── backend
 │   │   ├── app.py
 │   │   ├── train_model.py
 │   │   ├── model.pkl
 │   │   ├── requirements.txt
-│   │   └── dataset/
-│   │       └── flood.csv
+│   │   └── dataset
+│   │        └── flood.csv
 │   │
-│   ├── src/
+│   ├── src
 │   │   ├── App.jsx
 │   │   ├── main.jsx
-│   │   └── App.css
+│   │   ├── App.css
+│   │   └── index.css
 │   │
-│   ├── public/
+│   ├── public
 │   ├── package.json
 │   ├── vite.config.js
 │   └── README.md
@@ -80,11 +112,11 @@ Rising-Waters/
 
 ---
 
-## 📊 Machine Learning Model
+# 🧠 Machine Learning
 
-### Algorithm Used
+## Algorithm
 
-Random Forest Classifier
+**Random Forest Classifier**
 
 ### Input Features
 
@@ -93,42 +125,45 @@ Random Forest Classifier
 - Humidity
 - Temperature
 
-### Target Variable
+### Target
 
 ```
 Flood
 
 0 = No Flood
+
 1 = Flood
 ```
 
 ---
 
-## 📈 Model Performance
+# 📊 Model Performance
 
-- Algorithm: Random Forest Classifier
-- Accuracy: **99.8%**
-- Dataset Source: Kaggle Flood Prediction Dataset
+| Metric | Value |
+|---------|-------|
+| Algorithm | Random Forest |
+| Accuracy | **99.8%** |
+| Dataset | Kaggle Flood Dataset |
 
 ---
 
-## ⚙ Installation
+# ⚙ Installation
 
-### 1. Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/balalikitha1/Rising_water.git
 ```
 
-```bash
+```
 cd Rising_water/frontend
 ```
 
 ---
 
-## Backend Setup
+## Backend
 
-Navigate to backend folder
+Go to backend
 
 ```bash
 cd backend
@@ -148,7 +183,7 @@ Windows
 venv\Scripts\activate
 ```
 
-Install Dependencies
+Install Packages
 
 ```bash
 pip install -r requirements.txt
@@ -160,7 +195,7 @@ Run Backend
 python app.py
 ```
 
-Backend URL
+Backend
 
 ```
 http://127.0.0.1:5000
@@ -168,7 +203,7 @@ http://127.0.0.1:5000
 
 ---
 
-## Frontend Setup
+## Frontend
 
 Open another terminal
 
@@ -176,19 +211,19 @@ Open another terminal
 cd frontend
 ```
 
-Install Dependencies
+Install Packages
 
 ```bash
 npm install
 ```
 
-Run React
+Run
 
 ```bash
 npm run dev
 ```
 
-Frontend URL
+Frontend
 
 ```
 http://localhost:5173
@@ -202,9 +237,9 @@ http://localhost:5174
 
 ---
 
-## 🔌 API Endpoint
+# 🔌 API
 
-### Home
+## Home
 
 ```
 GET /
@@ -218,75 +253,115 @@ Rising Waters Backend is Running!
 
 ---
 
-### Predict Flood
+## Predict
 
 ```
 POST /predict
 ```
 
-Sample Request
+Example
 
 ```json
 {
-  "rainfall": 250,
-  "river_level": 9,
-  "humidity": 85,
-  "temperature": 28
+  "rainfall":250,
+  "river_level":9,
+  "humidity":85,
+  "temperature":30
 }
 ```
 
-Sample Response
+Response
 
 ```json
 {
-  "prediction": 1,
-  "risk": "🔴 High Flood Risk",
-  "confidence": 100,
-  "advice": "Move to a safer location and follow emergency alerts."
+  "prediction":1,
+  "risk":"🔴 High Flood Risk",
+  "confidence":100,
+  "advice":"Move to a safer location and follow emergency alerts."
 }
 ```
 
 ---
 
-## 🖥 Application Workflow
+# 🔄 Workflow
 
-1. User enters rainfall, river level, humidity, and temperature.
-2. React sends the data to the Flask API.
-3. Flask loads the trained Random Forest model.
-4. The model predicts flood risk.
-5. The API returns:
-   - Flood Risk
-   - Confidence Score
-   - Safety Advice
-6. React displays the result to the user.
+```
+User
+
+↓
+
+React Frontend
+
+↓
+
+Axios Request
+
+↓
+
+Flask API
+
+↓
+
+Random Forest Model
+
+↓
+
+Prediction
+
+↓
+
+Confidence Score
+
+↓
+
+Safety Advice
+
+↓
+
+Displayed to User
+```
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-Add screenshots of:
+## 🏠 Home Page
 
-- Home Page
-- Prediction Form
-- Prediction Result
-- Backend Running
-- Model Accuracy
+(Add Screenshot)
 
 ---
 
-## 🌱 Future Enhancements
+## 📝 Flood Prediction Form
 
-- Live Weather API Integration
-- Interactive Flood Map
-- Prediction History
-- Dashboard with Charts
-- SMS/Email Alerts
-- PDF Report Generation
-- Mobile Application
+(Add Screenshot)
 
 ---
 
-## 👩‍💻 Author
+## 📊 Prediction Result
+
+(Add Screenshot)
+
+---
+
+## 🤖 Machine Learning Accuracy
+
+(Add Screenshot)
+
+---
+
+# 🌱 Future Scope
+
+- 🌦 Live Weather API
+- 🗺 Interactive Flood Map
+- 📈 Analytics Dashboard
+- 📄 PDF Report Generation
+- 📲 SMS Alerts
+- 📧 Email Notifications
+- ☁ Cloud Deployment
+
+---
+
+# 👩‍💻 Developer
 
 **Bala Likitha**
 
@@ -294,18 +369,22 @@ B.Tech – Artificial Intelligence & Machine Learning
 
 ---
 
-## 📄 License
+# 🙏 Acknowledgements
+
+- Kaggle
+- React
+- Flask
+- Bootstrap
+- Scikit-learn
+- NumPy
+- Pandas
+
+---
+
+# 📄 License
 
 This project is developed for educational and academic purposes.
 
 ---
 
-## ⭐ Acknowledgements
-
-- Kaggle (Flood Prediction Dataset)
-- Scikit-learn
-- Flask
-- React
-- Bootstrap
-- Vite
-
+⭐ **If you found this project useful, consider giving it a star on GitHub!**
